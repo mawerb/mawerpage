@@ -12,10 +12,10 @@ function App() {
     name: 'Clarence Maor Barzilay',
     tagline: `CS @ California State University, Long Beach\nSoftware Engineer`,
     bio: 'I\'m a passionate developer with experience in building scalable web applications. I enjoy solving complex problems and creating user-friendly experiences. When I\'m not coding, I\'m always learning new technologies and contributing to open-source projects.',
-    email: 'your.email@example.com',
+    email: 'maorbarzilay8@gmail.com',
     github: 'https://github.com/mawerb',
     linkedin: 'https://linkedin.com/in/maorbarzilay',
-    resume: 'https://your-resume-url.pdf' // Update with your resume URL or path
+    resume: './src/assets/RESUME.pdf' // Update with your resume URL or path
   };
 
   return (
