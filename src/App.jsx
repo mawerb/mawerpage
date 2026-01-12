@@ -1,35 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Header from './components/Header';
+import Projects from './components/Projects';
+import About from './components/About';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import { projectsData } from './data/projectsData';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
+  // Personal information - update these with your details
+  const personalInfo = {
+    name: 'Clarence Maor Barzilay',
+    tagline: `CS @ California State University, Long Beach\nSoftware Engineer`,
+    bio: 'I\'m a passionate developer with experience in building scalable web applications. I enjoy solving complex problems and creating user-friendly experiences. When I\'m not coding, I\'m always learning new technologies and contributing to open-source projects.',
+    email: 'your.email@example.com',
+    github: 'https://github.com/mawerb',
+    linkedin: 'https://linkedin.com/in/maorbarzilay',
+    resume: 'https://your-resume-url.pdf' // Update with your resume URL or path
+  };
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="App">
+      <Header 
+        name={personalInfo.name} 
+        tagline={personalInfo.tagline}
+        github={personalInfo.github}
+        linkedin={personalInfo.linkedin}
+        resume={personalInfo.resume}
+      />
+      <Projects projects={projectsData} />
+      <About bio={personalInfo.bio} />
+      <Contact email={personalInfo.email} />
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;

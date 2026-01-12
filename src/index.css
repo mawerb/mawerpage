@@ -1,16 +1,15 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
   font-weight: 400;
 
   /* Color scheme */
-  --bg-primary: #0a0e1a;
-  --bg-secondary: #141b2d;
-  --text-primary: rgba(255, 255, 255, 0.92);
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --accent-blue: #6B9BD2;
-  --accent-blue-hover: #7AA9DC;
-  --accent-blue-light: #8BB5E8;
+  --bg-primary: #0a0a0a;
+  --text-primary: #ffffff;
+  --text-secondary: #a8a8a8;
+  --accent-cyan: #00d4ff;
+  --accent-cyan-hover: #00b8e6;
 
   color-scheme: dark;
   color: var(--text-primary);
@@ -22,49 +21,50 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: var(--accent-blue);
-  text-decoration: inherit;
-  transition: color 0.25s;
+* {
+  box-sizing: border-box;
 }
-a:hover {
-  color: var(--accent-blue-hover);
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
   background-color: var(--bg-primary);
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-  color: var(--text-primary);
+a {
+  color: var(--accent-cyan);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent-cyan-hover);
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
   font-family: inherit;
-  background-color: var(--bg-secondary);
-  color: var(--text-primary);
   cursor: pointer;
-  transition: all 0.25s;
+  border: none;
+  transition: all 0.2s ease;
 }
-button:hover {
-  border-color: var(--accent-blue);
-  background-color: rgba(107, 155, 210, 0.1);
-}
-button:focus,
+
 button:focus-visible {
-  outline: 2px solid var(--accent-blue);
+  outline: 2px solid var(--accent-cyan);
   outline-offset: 2px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  line-height: 1.2;
+  color: var(--text-primary);
+}
+
+p {
+  margin: 0;
+  color: var(--text-primary);
 }
