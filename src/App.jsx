@@ -15,7 +15,7 @@ function App() {
     email: 'maorbarzilay8@gmail.com',
     github: 'https://github.com/mawerb',
     linkedin: 'https://linkedin.com/in/maorbarzilay',
-    resume: './src/assets/RESUME.pdf' // Update with your resume URL or path
+    resume: '/RESUME.pdf'
   };
 
   return (
