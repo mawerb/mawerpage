@@ -23,6 +23,24 @@ function Nav() {
         </li>
         <li>
           <a 
+            href="#tech" 
+            className="nav__link"
+            onClick={(e) => handleClick(e, 'tech')}
+          >
+            Tech
+          </a>
+        </li>
+        <li>
+          <a 
+            href="#experience" 
+            className="nav__link"
+            onClick={(e) => handleClick(e, 'experience')}
+          >
+            Experience
+          </a>
+        </li>
+        <li>
+          <a 
             href="#about" 
             className="nav__link"
             onClick={(e) => handleClick(e, 'about')}

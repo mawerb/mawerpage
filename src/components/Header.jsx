@@ -102,6 +102,24 @@ function Header({ name, tagline, github, linkedin, resume }) {
           </li>
           <li>
             <a 
+              href="#tech" 
+              className="landing__nav-link"
+              onClick={(e) => handleNavClick(e, 'tech')}
+            >
+              Tech
+            </a>
+          </li>
+          <li>
+            <a 
+              href="#experience" 
+              className="landing__nav-link"
+              onClick={(e) => handleNavClick(e, 'experience')}
+            >
+              Experience
+            </a>
+          </li>
+          <li>
+            <a 
               href="#about" 
               className="landing__nav-link"
               onClick={(e) => handleNavClick(e, 'about')}

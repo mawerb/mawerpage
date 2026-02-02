@@ -1,9 +1,13 @@
 import Header from './components/Header';
 import Projects from './components/Projects';
+import Technologies from './components/Technologies';
+import Experiences from './components/Experiences';
 import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { projectsData } from './data/projectsData';
+import { technologiesData } from './data/technologiesData';
+import { experiencesData } from './data/experiencesData';
 import './App.css';
 
 function App() {
@@ -28,6 +32,8 @@ function App() {
         resume={personalInfo.resume}
       />
       <Projects projects={projectsData} />
+      <Technologies technologies={technologiesData} />
+      <Experiences experiences={experiencesData} />
       <About bio={personalInfo.bio} />
       <Contact email={personalInfo.email} />
       <Footer />

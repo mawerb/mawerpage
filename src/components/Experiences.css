@@ -1,0 +1,135 @@
+.experiences {
+  padding: 4rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.experiences__container {
+  width: 100%;
+}
+
+.experiences__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--text-primary);
+}
+
+.experiences__subsection {
+  margin-bottom: 3rem;
+}
+
+.experiences__subsection:last-child {
+  margin-bottom: 0;
+}
+
+.experiences__subsection-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.experiences__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  padding-left: 1.5rem;
+  border-left: 2px solid var(--accent-cyan);
+}
+
+.experiences__item {
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.experiences__item:last-child {
+  padding-bottom: 0;
+}
+
+.experiences__dot {
+  position: absolute;
+  left: -1.5rem;
+  top: 0.25rem;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--accent-cyan);
+}
+
+.experiences__item-content {
+  margin-left: 0.5rem;
+}
+
+.experiences__item-date {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--accent-cyan);
+  margin-bottom: 0.25rem;
+}
+
+.experiences__item-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: var(--text-primary);
+}
+
+.experiences__item-org {
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
+}
+
+.experiences__item-description {
+  margin: 0;
+  padding-left: 1.25rem;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.experiences__item-description li {
+  margin-bottom: 0.25rem;
+}
+
+.experiences__item-description li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .experiences {
+    padding: 3rem 1.5rem;
+  }
+
+  .experiences__title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .experiences__subsection-title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .experiences__list {
+    padding-left: 1.25rem;
+  }
+
+  .experiences__dot {
+    left: -1.25rem;
+    width: 10px;
+    height: 10px;
+  }
+
+  .experiences__item-title {
+    font-size: 1rem;
+  }
+
+  .experiences__item-description {
+    font-size: 0.875rem;
+  }
+}
